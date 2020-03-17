@@ -103,13 +103,14 @@ footer
   color: #EBF272;
 }
 
-#page-container {
+#page-container 
+{
     position: relative;
     min-height: 90vh;
     background-color: #2C2D41;
     margin: 50px;
     box-shadow: 0px 0px 20px 20px #2C2D41;
-  }
+}
 
   #tomorrow
   {
@@ -127,4 +128,109 @@ footer
   {
     max-width: 100%;
     height: auto;
+  }
+
+  .sprite 
+  {
+	width: 600px;
+	height: 431px;
+  }
+
+  #smart
+  {
+    background: url('../images/sprite.png') no-repeat -50px -50px;
+  }
+
+  #decisive
+  {
+    background: url('../images/sprite.png') no-repeat -50px -513px;
+  }
+
+  #noble
+  {
+    background: url('../images/sprite.png') no-repeat -50px -980px;
+  }
+
+  .wrapper {
+    position: relative;
+    height: 600px;
+  }
+  #onediv 
+  {
+    position: absolute;
+    top: 120px;
+    left: 200px;
+    width: 200px;
+    height: 400px;
+    background-color: #B3C4C6;
+    border-radius: 80px 80px 0px 0px;
+    box-shadow:
+      -8px -2px 0 2px white,
+      8px -2px 0 2px white,
+      -12px -6px 0 2px rgba(0,0,0),
+      12px -6px 0 2px rgba(0,0,0),
+      -14px 6px 0 0px black,
+      14px 6px 0 0px black,
+      0px -96px 0 -64px #B3C4C6,
+      0px -96px 0 -60px black,
+      0px -200px 0 -92px #B3C4C6,
+      0px -200px 0 -88px black;
+  }
+
+  #onediv::before 
+  {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 300px;
+    left: 0px;
+    width: 200px;
+    height: 80px;
+    background-color: #FAF88F;
+    border-radius: 30px;
+
+    box-shadow:
+      0 0 0 4px black;
+
+    background-image:
+      repeating-linear-gradient(
+        to bottom,
+        transparent 20px,
+        black 20px,
+        black 24px,
+        transparent 24px,
+        transparent 54px
+      ),
+      repeating-linear-gradient(
+        to right,
+        transparent 15px,
+        black 15px,
+        black 18px,
+        transparent 16px,
+        transparent 50px
+      );
+  }
+
+  #onediv::after 
+  {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 280px;
+    height: 100px;
+    background-color: black;
+    top: 140px;
+    left: -40px;
+    border-radius: 45px;
+
+    box-shadow:
+      0px -30px 0 -20px #B3C4C6,
+      0px 30px 0 -20px #B3C4C6,
+      0 0 0 10px white,
+      0 0 0 14px black;
+    background-image:
+      radial-gradient(circle at 75px 52px, black 16px, transparent 16px),
+      radial-gradient(circle at 199px 52px, black 16px, transparent 16px),
+      radial-gradient(circle at 77px 50px, #FAF88F 48px, transparent 1%),
+      radial-gradient(circle at 198px 50px, #FAF88F 48px, transparent 1%);
   }

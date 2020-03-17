@@ -13,3 +13,14 @@ const loadPage = (pageName) => {
 }
 
 document.addEventListener('DOMContentLoaded', () => loadPage('includes/home.html'));
+
+function Multi(a, b) {
+    a * b;
+}
+
+
+function caller() {
+    var d = inputChars();
+    report(d);
+    console.log(d);
+}

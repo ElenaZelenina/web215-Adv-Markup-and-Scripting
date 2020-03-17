@@ -1,0 +1,57 @@
+body {
+background-color: #839CB9;
+  color: #839CB9;
+  font-family: 'Tomorrow', sans-serif;
+  line-height: 1.5;
+    text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  color: #EBF272;
+  display: inline-block;
+  margin: 20px 0 0 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}
+
+ul {
+    max-width: 550px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+    line-height: 1.6;
+}
+
+blockquote {
+    font-style: italic;
+    max-width: 545px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+}
+
+a {
+    color: #EBF272;
+}
+
+#main {
+    margin: 30px 8px;
+    padding: 15px;
+    border-radius: 5px;
+    background: #2C2D41;
+}
+
+#img-div {
+    background: #839CB9;
+    padding: 10px;
+    margin: 0;
+}
+
+#img-caption {
+    color: #2C2D41;
+    margin: 15px 0 5px 0;
+}
