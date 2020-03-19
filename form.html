@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>FCC Survey Form</title>
+    <link rel="stylesheet" href="styles/fcc-main.css">
+    <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Futurama Survey Form</h1>
+        <p id="description">Please tell us about yourself</p>
+    </header>
+    <form id="survey-form">
+        <div>
+            <label id="name-label" for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+        </div>
+        <div>
+            <label id="email-label" for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required />
+        </div>
+        <div>
+            <label id="number-label" for="number">Age (optional)</label>
+            <input type="number" id="number" name="age" min="1" max="150" placeholder="Age" />
+        </div>
+        <div>
+            <p>
+                How much do you love Futurama?
+            </p>
+            <select id="dropdown" name="role" required>
+                <option disabled selected value>Select an option</option>
+                <option value="1">I don't like it</option>
+                <option value="2">Not much really</option>
+                <option value="3">A little</option>
+                <option value="4">I rather like it</option>
+                <option value="5">I like it pretty much</option>
+                <option value="6">I love it!</option>
+            </select>
+        </div>
+        <div>
+            <p>Would you recommend Futurama to a friend?</p>
+            <label class="input-radio"><input name="user-recommend" value="definitely" type="radio"
+                    checked />Definitely</label>
+            <label class="input-radio"><input name="user-recommend" value="maybe" type="radio" />Maybe</label>
+            <label class="input-radio"><input name="user-recommend" value="not-sure" type="radio" />Not sure</label>
+        </div>
+        <div>
+            <p> What is your favorite episode? (Check all you like)</p>
+            <label class="input-checkbox"><input name="prefer" value="s1e1" type="checkbox" />Space Pilot: 3000</label>
+            <label class="input-checkbox"><input name="prefer" value="s1e8" type="checkbox" />A Big Piece Of
+                Garbage</label>
+            <label class="input-checkbox"><input name="prefer" value="s1e13" type="checkbox" />Fry and the Slurm
+                Factory</label>
+            <label class="input-checkbox"><input name="prefer" value="s1e15" type="checkbox" />The Problem With
+                Popplers</label>
+            <label class="input-checkbox"><input name="prefer" value="s3e22" type="checkbox" />The 30% Iron Chef</label>
+            <label class="input-checkbox"><input name="prefer" value="s4e7" type="checkbox" />‘Jurassic Bark’</label>
+            <label class="input-checkbox"><input name="prefer" value="s4e11" type="checkbox" />Where No Fan Has Gone
+                Before</label>
+            <label class="input-checkbox"><input name="prefer" value="s4e12" type="checkbox" />The Sting</label>
+            <label class="input-checkbox"><input name="prefer" value="s7e7" type="checkbox" />The Late Phillip J
+                Fry</label>
+            <label class="input-checkbox"><input name="prefer" value="s7e26" type="checkbox" />Meanwhile</label>
+        </div>
+        <div>
+            <p>Any comments?</p>
+            <textarea id="comments" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <div>
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+    </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
