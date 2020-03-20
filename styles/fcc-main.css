@@ -121,6 +121,12 @@ nav {
     text-decoration: none;
   }
 
+  section p {
+      max-width: 850px;
+      text-indent: 4em;
+      text-align: left;
+  }
+
 #main {
     margin: 30px 8px;
     padding: 15px;
@@ -139,3 +145,28 @@ nav {
     margin: 15px 0 5px 0;
 }
 
+#nav-bar {
+    position: fixed;
+    width: 100%;
+}
+
+#title {
+    width: 100%;
+}
+
+#description {
+    display: inline-table;
+}
+
+ #header {
+    position: fixed;
+    background-color: #2C2D41;
+ }
+ #header-img {
+     float: right;
+     z-index: -1;
+ }
+
+ #main-doc {
+     color: #2C2D41;
+ }
