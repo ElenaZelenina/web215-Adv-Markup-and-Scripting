@@ -13,6 +13,11 @@ h1 {
   margin: 20px 0 0 0;
 }
 
+h4 {
+    color: #EBF272;
+    text-align: left;
+}
+
 img {
     max-width: 100%;
     display: block;
@@ -22,7 +27,7 @@ img {
 
 ul {
     max-width: 550px;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 16px auto;
     text-align: left;
     line-height: 1.6;
 }
@@ -123,7 +128,6 @@ nav {
 
   section p {
       max-width: 850px;
-      text-indent: 4em;
       text-align: left;
   }
 
@@ -165,8 +169,4 @@ nav {
  #header-img {
      float: right;
      z-index: -1;
- }
-
- #main-doc {
-     color: #2C2D41;
  }
