@@ -12,13 +12,18 @@
     <nav id="navbar">
         <header><h2>CSS Flexbox</h2></header>
         <ul>
-            <li><a class="nav-link" href="#layout_module">CSS Flexbox Layout Module</a></li>
-            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
-
+            <li><a class="nav-link" href="#CSS_Flexbox_Layout_Module">CSS Flexbox Layout Module</a></li>
+            <li><a class="nav-link" href="#Parent_Element_(Container)">Parent Element (Container)</a></li>
+            <li><a class="nav-link" href="#The_flex-direction_Property">The flex-direction Property</a></li>
+            <li><a class="nav-link" href="#The_flex-wrap_Property">The flex-wrap Property</a></li>
+            <li><a class="nav-link" href="#The_flex-flow_Property">The flex-flow Property</a></li>
+            <li><a class="nav-link" href="#The_justify-content_Property">The justify-content Property</a></li>
+            <li><a class="nav-link" href="#The_align-items_Property">The align-items Property</a></li>
+            <li><a class="nav-link" href="#The_align-content_Property">The align-content Property</a></li>
         </ul>
     </nav>
     <main id="main-doc">
-        <section class="main-section" id="layout_module">
+        <section class="main-section" id="CSS_Flexbox_Layout_Module">
             <header><h3>CSS Flexbox Layout Module</h3></header>
             <p>Before the Flexbox Layout module, there were four layout modes:</p>
             <ul>
@@ -30,7 +35,110 @@
             <p>The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without
                 using float or positioning.</p>
         </section>
-
+        <section class="main-section" id="Parent_Element_(Container)">
+            <header><h3>Parent Element (Container)</h3></header>
+            <p>The flex container becomes flexible by setting the <em>display</em> property to <em>flex</em>:</p>
+            <code>.flex-container {
+                display: flex;
+              }</code>
+            <p>The flex container properties are:</p>
+            <ul>
+                <li><a href="#The_flex-direction_Property">flex-direction</a></li>
+                <li><a href="#The_flex-wrap_Property">flex-wrap</a></li>
+                <li><a href="#The_flex-flow_Property">flex-flow</a></li>
+                <li><a href="#The_justify-content_Property">justify-content</a></li>
+                <li><a href="#The_align-items_Property">align-items</a></li>
+                <li><a href="#The_align-content_Property">align-content</a></li>
+            </ul>
+        </section>
+        <section class="main-section" id="The_flex-direction_Property">
+            <header><h3>The flex-direction Property</h3></header>
+            <p>The <em>flex-direction</em> property defines in which direction the container wants to stack the flex items.</p>
+            <p>The <em>column</em> value stacks the flex items vertically (from top to bottom):</p>
+            <code>.flex-container {
+                display: flex;
+                flex-direction: column;
+              }</code>
+            <p>The <em>row</em> value stacks the flex items horizontally (from left to right):</p>
+            <code>.flex-container {
+                display: flex;
+                flex-direction: row;
+              }</code>
+        </section>
+        <section class="main-section" id="The_flex-wrap_Property">
+            <header><h3>The flex-wrap Property</h3></header>
+            <p>The <em>flex-wrap</em> property specifies whether the flex items should wrap or not:</p>
+            <ul>
+                <li>The <em>wrap</em> value specifies that the flex items will wrap if necessary.</li>
+                <li>The <em>nowrap</em> value specifies that the flex items will not wrap (this is default).</li>
+            </ul>
+        </section>
+        <section class="main-section" id="The_flex-flow_Property">
+            <header><h3>The flex-flow Property</h3></header>
+            <p>The <em>flex-flow</em> property is a shorthand property for setting both the <em>flex-direction</em> and <em>flex-wrap</em> properties:</p>
+            <code>.flex-container {
+                display: flex;
+                flex-flow: row wrap;
+              }</code>
+        </section>
+        <section class="main-section" id="The_justify-content_Property">
+            <header><h3>The justify-content Property</h3></header>
+            <p>The <em>justify-content</em> property is used to align the flex items:</p>
+            <ul>
+                <li>The <em>center</em> value aligns the flex items at the center of the container.</li>
+                <li>The <em>flex-start</em> value aligns the flex items at the beginning of the container (this is default).</li>
+                <li>The <em>flex-end</em> value aligns the flex items at the end of the container.</li>
+                <li>The <em>space-around</em> value displays the flex items with space before, between, and after the lines.</li>
+                <li>The <em>space-between</em> value displays the flex items with space between the lines.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="The_align-items_Property">
+            <header><h3>The align-items Property</h3></header>
+            <p>The <em>align-items</em> property is used to align the flex items vertically.</p>
+            <p>The <em>center</em> value aligns the flex items in the middle of the container:</p>
+            <code>.flex-container {
+                display: flex;
+                height: 200px;
+                align-items: center;
+              }</code>
+            <p>The <em>flex-start</em> value aligns the flex items at the top of the container:</p>
+            <code>.flex-container {
+                display: flex;
+                height: 200px;
+                align-items: flex-start;
+              }</code>
+            <p>The <em>flex-end</em> value aligns the flex items at the bottom of the container:</p>
+            <code>.flex-container {
+                display: flex;
+                height: 200px;
+                align-items: flex-end;
+              }</code>
+            <p>The <em>stretch</em> value stretches the flex items to fill the container (this is default):</p>
+            <code>.flex-container {
+                display: flex;
+                height: 200px;
+                align-items: stretch;
+              }</code>
+            <p>The <em>baseline</em> value aligns the flex items such as their baselines aligns:</p>
+            <code>.flex-container {
+                display: flex;
+                height: 200px;
+                align-items: baseline;
+              }</code>
+        </section>
+        <section class="main-section" id="The_align-content_Property">
+            <header><h3>The align-content Property</h3></header>
+            <p>The <em>align-content</em> property is used to align the flex lines.</p>
+            <ul>
+                <li>The <em>space-between</em> value displays the flex lines with equal space between them.</li>
+                <li>The <em>space-around</em> value displays the flex lines with space before, between, and after them.</li>
+                <li>The <em>stretch</em> value stretches the flex lines to take up the remaining space (this is default).</li>
+                <li>The <em>center</em> value displays display the flex lines in the middle of the container.</li>
+                <li>The <em>flex-start</em> value displays the flex lines at the start of the container.</li>
+                <li>The <em>flex-end</em> value displays the flex lines at the end of the container.</li>
+            </ul>
+        </section>
+        <h2>For more information please visit <a href="https://www.w3schools.com/css/css3_flexbox.asp">W3Schools website</a>.</h2>
     </main>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>

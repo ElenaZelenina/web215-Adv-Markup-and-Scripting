@@ -1,8 +1,7 @@
 body {
-    background-color: #839CB9;
+    background-color: #2C2D41;
     color: #839CB9;
     font-family: 'Tomorrow', sans-serif;
-    text-align: center;
     margin: 0px;
     padding: 0px;
 }
@@ -10,10 +9,13 @@ body {
 h1 {
     font-size: 3em;
     color: #EBF272;
-    display: inline-block;
     margin: 20px 0 0 0;
 }
   
+h1, h2, nav {
+    text-align: center;
+}
+
 h4 {
     color: #EBF272;
     text-align: left;
@@ -51,4 +53,29 @@ header img {
 main {
     background-color: #2C2D41;
     padding-top: 70px;
+    width: 717px;
+    margin: 0 auto;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #EBF272;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#submit {
+    background-color: #EBF272;
+}
+
+#video {
+    border: 0;
+}
+
+@media screen and (max-width: 1300px) {
+    header img {
+        display: none;
+    }
 }

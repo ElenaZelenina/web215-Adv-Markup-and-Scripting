@@ -4,25 +4,25 @@
 <head>
     <meta charset="UTF-8" />
     <title>FCC Product Landing Page</title>
-    <link rel="stylesheet" href="styles/fcc-main.css">
+    <link rel="stylesheet" href="styles/product.css">
     <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
 </head>
 
-<body id="product-page">
-    <main id="main">
-        <header id="header">
-            <nav id="nav-bar">
-                <ul>
-                    <li><a class="nav-link" href="#highlights">Highlights</a></li>
-                    <li><a class="nav-link" href="#description">Description</a></li>
-                    <li><a class="nav-link" href="#review">Review</a></li>
-                </ul>
-            </nav>
-            <img id="header-img" src="images/logo-medium.jpg" alt="Bender" />
-        </header>
-        <section id="highlights" style="clear: both;">
+<body>
+    <header id="header">
+        <img src="images/logo-medium.jpg" id="header-img" alt="Bender" />
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="#highlights">Hightlights</a></li>
+                <li><a class="nav-link" href="#description">Description</a></li>
+                <li><a class="nav-link" href="#review">Review</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-doc">
+        <section id="highlights" class="main-section">
             <h1 id="title">Bender Mini Figure</h1>
-            <h2 id="title">Mega Construx Heroes Series 2</h2>
+            <h2>Mega Construx Heroes Series 2</h2>
             <h3>Highlights</h3>
             <ul>
                 <li>Highly collectible, super-poseable Bender micro action figure</li>
@@ -32,7 +32,7 @@
                 <li>Released February 2018</li>
             </ul>
         </section>
-        <section id="description">
+        <section id="description" class="main-section">
             <h3>Description</h3>
             <p>
                 It’s gonna be fun on the bun with this deluxe, buildable Bender figure! Bite my shiny metal bricks! Now
@@ -43,10 +43,9 @@
                 the 6 in the series, meatbag.
             </p>
         </section>
-        <section id="review">
+        <section id="review" class="main-section">
             <h3>Review</h3>
-            <iframe id="video" width="717" height="403" src="https://www.youtube.com/embed/Bdr6xPU2lL4" frameborder="0"
-                allowfullscreen></iframe>
+            <iframe id="video" width="717" height="403" src="https://www.youtube.com/embed/Bdr6xPU2lL4" allowfullscreen></iframe>
         </section>
         <form id="form" action="https://www.freecodecamp.com/email-submit">
             <input name="email" id="email" type="email" placeholder="Enter your email address" required />
@@ -55,5 +54,3 @@
     </main>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
-
-</html>
