@@ -1,0 +1,164 @@
+body {
+    background-color: #2C2D41;
+      color: #c6d3e2;
+      font-family: 'Tomorrow', sans-serif;
+    }
+
+    h2
+    {
+      font-size: 3em;
+      color: #EBF272;
+      display: inline-block;
+      margin: 20px 0 0 30px;
+    }
+    
+    nav
+    {
+      text-align: center;
+      border: 1px solid #EBF272;
+      background-color: #839CB9;
+      color: #2C2D41;
+      font-family: 'Squada One', cursive;
+    }
+    
+    nav a
+    {
+      text-align: center;
+      display: inline-block;
+      margin: 1px;
+      padding: 10px 0;
+      text-decoration: none;
+    }
+    
+    nav a:hover
+    {
+      color: #EBF272;
+      background-color: #839CB9;
+    }
+    
+    a
+    {
+      color: #2C2D41;
+      margin: 0;
+    }
+    main a 
+    {
+      color: #839CB9;
+    }
+    
+    a:hover
+    {
+      color: #EBF272;
+    }
+    
+    main
+    {
+      margin: 0 0 15px 50px;
+    }
+    
+    header, footer 
+    {
+      text-align: center;
+      font-size: larger;
+      margin-left: 322px;
+    }
+    
+    .button 
+    {
+      background-color: #839CB9;
+      border: 1px solid #EBF272;
+      border-radius: 8px;
+      padding: 10px;
+      text-align: center;
+      display: inline-block;
+      margin: 26px 18px 10px 18px;
+      width: 100px;
+      font-family: 'Squada One', cursive;
+    }
+    
+    .button a
+    {
+      color: #2C2D41;
+      text-decoration: none;
+    }
+    
+    .button a:hover
+    {
+      color: #EBF272;
+    }
+    
+h3 {
+    color: #EBF272;
+}
+    
+li a, li a:visited {
+    color: #c6d3e2;
+}
+
+h2 a, h2 a:visited {
+    color: #EBF272;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre;
+    line-height: 2;
+    background-color: #c6d3e2;
+    color: #2C2D41;
+    padding: 15px;
+    margin: 10px;
+  }
+
+#navbar {
+   position: fixed;
+   top: 0px;
+   left: 0px;
+   width: 322px;
+   height: 100%;
+   border-right: solid;
+   border-color: #EBF272;
+   color: #EBF272;
+   background-color: #2C2D41;
+   overflow-y: scroll;
+ }
+
+  em {
+    background-color:#494a5f;
+  }
+  
+  #main-doc header {
+    text-align: left;
+    margin: 0px;
+  }
+  
+  #navbar ul {
+    padding: 0;
+    margin: 0 30px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+ 
+ #navbar li {
+   width: 330px;
+   border-top: 1px solid;
+   list-style: none;
+   position: relative;
+   width: 100%;
+ }
+ 
+ #navbar a {
+   width: 330px;
+   display: block;
+   padding: 10px 30px;
+   color: #EBF272;
+   text-decoration: none;
+   cursor: pointer;
+ }
+
+ #main-doc {
+   margin-left: 362px;
+   padding: 20px;
+   margin-bottom: 110px;
+ }
+
