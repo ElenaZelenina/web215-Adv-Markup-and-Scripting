@@ -11,7 +11,7 @@ body {
       display: inline-block;
       margin: 20px 0 0 30px;
     }
-    
+
     nav
     {
       text-align: center;
@@ -20,7 +20,7 @@ body {
       color: #2C2D41;
       font-family: 'Squada One', cursive;
     }
-    
+
     nav a
     {
       text-align: center;
@@ -29,41 +29,41 @@ body {
       padding: 10px 0;
       text-decoration: none;
     }
-    
+
     nav a:hover
     {
       color: #EBF272;
       background-color: #839CB9;
     }
-    
+
     a
     {
       color: #2C2D41;
       margin: 0;
     }
-    main a 
+    main a
     {
       color: #839CB9;
     }
-    
+
     a:hover
     {
       color: #EBF272;
     }
-    
+
     main
     {
       margin: 0 0 15px 50px;
     }
-    
-    header, footer 
+
+    header, footer
     {
       text-align: center;
       font-size: larger;
       margin-left: 322px;
     }
-    
-    .button 
+
+    .button
     {
       background-color: #839CB9;
       border: 1px solid #EBF272;
@@ -75,22 +75,22 @@ body {
       width: 100px;
       font-family: 'Squada One', cursive;
     }
-    
+
     .button a
     {
       color: #2C2D41;
       text-decoration: none;
     }
-    
+
     .button a:hover
     {
       color: #EBF272;
     }
-    
+
 h3 {
     color: #EBF272;
 }
-    
+
 li a, li a:visited {
     color: #c6d3e2;
 }
@@ -106,8 +106,6 @@ code {
     line-height: 2;
     background-color: #c6d3e2;
     color: #2C2D41;
-    padding: 15px;
-    margin: 10px;
   }
 
 #navbar {
@@ -126,19 +124,19 @@ code {
   em {
     background-color:#494a5f;
   }
-  
+
   #main-doc header {
     text-align: left;
     margin: 0px;
   }
-  
+
   #navbar ul {
     padding: 0;
     margin: 0 30px;
     overflow-y: auto;
     overflow-x: hidden;
   }
- 
+
  #navbar li {
    width: 330px;
    border-top: 1px solid;
@@ -146,7 +144,7 @@ code {
    position: relative;
    width: 100%;
  }
- 
+
  #navbar a {
    width: 330px;
    display: block;
@@ -162,3 +160,39 @@ code {
    margin-bottom: 110px;
  }
 
+.sample {
+  margin-left: 20px;
+  padding: 10px;
+  border-left: 3px solid #c6d3e2;
+  min-height: 62px;
+  position: relative;
+}
+  .sample::before {
+    content: "sample";
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-size: 0.7em;
+    position: absolute;
+    left: -22px;
+    top: 0px;
+  }
+
+
+abbr {
+  font-size: 1.2em;
+}
+
+.sample table th, .sample table td  {
+  border: 1px solid #494a5f;
+  padding: 8px;
+}
+
+.sample.divs div {
+  border: 1px solid #494a5f;
+  padding: 5px;
+}
+
+.bender-img {
+  position: fixed;
+  right: 0;
+}
