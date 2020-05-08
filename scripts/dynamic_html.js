@@ -21,8 +21,14 @@ function displayData(data) {
   const ul = document.createElement('ul');
   navBar.appendChild(ul);
 
-  for (element of data) {
-    const [name, description, html5, ...samples] = element;
+  for (let element of data) {
+    const name = element[0];
+    const description = element[1];
+    const html5 = element[2];
+    const samples = [];
+    for (let i = 3; i < element.length; i++) {
+      samples.push(element[i]);
+    }
     const li = document.createElement('li');
     li.addEventListener('click', () => scrollTo(name));
     const html = `<a href="#${name}">&lt;${name}&gt;</a>`;
@@ -61,7 +67,7 @@ function processData(fileContent) {
   const result = [];
   const lines = fileContent.split("\n");
   let lineObject = null;
-  for (line of lines) {
+  for (let line of lines) {
     if (!!line && line[0] !== ' ' && line !== '\r') {
       if (!!lineObject) {
         result.push(lineObject);
